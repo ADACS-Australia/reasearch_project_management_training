@@ -84,5 +84,14 @@ You can then create a board for every large project you have. All members of you
 Recomendations on how to uses these boards effectively will be covered in the following episodes
 <!--TODO add links to the episodes-->
 
+### Private boards
+By default, all workspace members have access to the boards in said workspace. If you have private data that you are not ready to share with everyone in your group you can switch your board to private.
+
+![make_private](../fig/make_private.png)
+
+You can also keep it in your personal workspace and move it to the group workspace when you are ready to share the results.
+
+![change_workspace](../fig/change_workspace.png)
+
 {% include links.md %}
 
