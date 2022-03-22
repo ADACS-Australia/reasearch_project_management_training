@@ -67,6 +67,23 @@ If you're developing software as part of this project you should include the git
 ### Data storage
 The best method of data storage is very project dependent. How to access the data should be described here which could be a link to cloud storage or the directory on a supercomputer.
 
+## Recommended Trello template
+The standard to do, in progress and done lists are usually sufficient but feel free to add more. The following labels will likely be helpful.
+
+![paper_labels](../fig/paper_labels.png)
+
+Plots, Tables, and Writing will make it more transparent what the card's task is and will make it easier to find the task you are looking for. Needs discussion is a helpful label to flag something you are unsure of so you can prioritise discussing the card in the next meeting. Processing is a useful label in case of supercomputer maintenance or outages. You will be able to see which tasks you need to prioritise before the supercomputer is down.
+
+Here is an example of a Trello board used for developing a survey paper.
+
+![paper_example](../fig/paper_example.png)
+
+As the board gets busier, you can use filters to find important tasks. For example, the supercomputer is about to go into maintenance for a week, so I want to see all processing tasks assigned to me. I click the filter button in the top right and click "Cards assigned to me" and the Processing label.
+
+![paper_filter](../fig/paper_filter.png)
+
+I can now see that I have one processing task assigned to me, so I will complete it before the supercomputer is down for maintenance.
+
 # Paper Collaboration
 
 ## Reproducible data
@@ -88,8 +105,6 @@ Some data is too large to store anywhere so instead you must document how to rec
 
 ## Using a GitHub repo for the paper
 It is common use some simple python to create some plots or format a csv into a latex table. When we start collaborating this can bit complicated if we have several versions of these scripts and we're emailing the scripts back on forth. It is better to make a new GitHub repo so it is easier to collaborate and version controlled. The goal of the repository should be that you can run all of the scripts and reproduce all plots, tables and results from your paper. Not only is this good software practice, it is also good research practice to make it easier for future researchers to recreate your work. A link to the GitHub page should be put in the Trello Boards description.
-
-## Recommended template
 
 ## Paper version control
 Proper verson control of your paper will allow you to compare with earlier versions (if you want to revert a change) and prevents the need of keeping multiple versions. Overleaf has become hugely popular for collaborating on papers and for the following methods we will assume that is what you are using to write your latex papers. There are several methods of version control with Overleaf, the project lead should choose the method before beginning writing the paper.
