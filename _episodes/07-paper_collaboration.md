@@ -95,6 +95,21 @@ It is common use some simple python to create some plots or format a csv into a 
 Proper verson control of your paper will allow you to compare with earlier versions (if you want to revert a change) and prevents the need of keeping multiple versions. Overleaf has become hugely popular for collaborating on papers and for the following methods we will assume that is what you are using to write your latex papers. There are several methods of version control with Overleaf, the project lead should choose the method before beginning writing the paper.
 
 ### Method 1: Overleaf premium
+If you, or the paper owner, has Overleaf premium, then Overleaf will keep track of changes for you. To view the history, you click the History button, and you can view all the changes you and your collaborators have made.
+
+![overleaf_histroy](../fig/overleaf_history.png)
+
+You can see the differences each change made with the "Compare to another version" button in the top left. For example, here is a diff where I can see myself adding an equation.
+
+![overleaf_diff](../fig/overleaf_diff.png)
+
+As you can see, most of the version control is automated. The only manual version control required is adding labels (the blue button on the top right in the History tab).
+
+![overleaf_label](../fig/overleaf_label.png)
+
+Once you've added a label, you can view them in the Labels section of the History tab to compare the differences between versions.
+
+![overleaf_label_view](../fig/overleaf_label_view.png)
 
 
 ### Method 2: Github pull and push
@@ -123,7 +138,6 @@ Then write a commit message.
 Once you have made significant progress and you would like to mark this as a specific version (first draft, referee response, final etc.), you can go to the GitHub page and make a release. You can use these releases (also known as tags) to compare versions with `git diff`
 <!-- TODO add a link if Paul has a relevant section -->
 
-### Method 3: Git tracking of zip files
 
 ## Reflect
 Once the paper is published or the project is completed it is important to have a final meeting to reflect on project. Think if there are things you could improve on for future projects.
