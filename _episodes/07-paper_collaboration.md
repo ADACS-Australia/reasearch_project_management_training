@@ -146,7 +146,7 @@ All users should frequently push their changes. You can do this by clicking the 
 
 ![overleaf_sync](../fig/overleaf_sync.png)
 
-Then write a commit message.
+Then write a commit message. Note that GitHub will not know which user created this commit so always include your name in the commit.
 
 ![overleaf_push](../fig/overleaf_push.png)
 
