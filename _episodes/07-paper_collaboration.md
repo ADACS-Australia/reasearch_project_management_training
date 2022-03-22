@@ -98,6 +98,30 @@ Proper verson control of your paper will allow you to compare with earlier versi
 
 
 ### Method 2: Github pull and push
+With a free overleaf account, you can make a GitHub repository that overleaf can push and pull to. You can use this to commit changes frequently and even use the GitHub page to tag release versions (first draft, referee response, final etc.).
+
+You can create a GitHub repository by clicking the menu in the top right of the paper's overleaf page
+
+![overleaf_menu](../fig/overleaf_menu.png)
+
+and then click the GitHub button under Sync
+
+![overleaf_github](../fig/overleaf_github.png)
+
+Then give your new GitHub repository a Name and description and click "Create a GitHub repository". By default, it will make a private repository, and this is usually best to ensure no one accesses your paper before publication.
+
+![overleaf_github_sync](../fig/overleaf_github_sync.png)
+
+All users should frequently push their changes. You can do this by clicking the menu, GitHub, and then Push.
+
+![overleaf_sync](../fig/overleaf_sync.png)
+
+Then write a commit message.
+
+![overleaf_push](../fig/overleaf_push.png)
+
+Once you have made significant progress and you would like to mark this as a specific version (first draft, referee response, final etc.), you can go to the GitHub page and make a release. You can use these releases (also known as tags) to compare versions with `git diff`
+<!-- TODO add a link if Paul has a relevant section -->
 
 ### Method 3: Git tracking of zip files
 
