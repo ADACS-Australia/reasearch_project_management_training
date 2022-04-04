@@ -1,5 +1,5 @@
 ---
-title: "Project and Paper Collaboration"
+title: "Project Collaboration"
 teaching: 0
 exercises: 0
 questions:
@@ -13,59 +13,10 @@ keypoints:
 ---
 
 # Project Collaboration
+It will be benifical to project manage any large peice of work, whether it is software, processing or analyising data. All of which may turn into a paper which you can also manage on the same Trello board.
 
-## Project Planning
-Once you have made the project Trello board, the first thing you should do is fill in the description (or a card) with your project plan. The following is a project planning template that we recomend.
-~~~
-Title
-
-Description:
-
-Estimated completion date:
-
-Collaborators:
-# Name, Role, FTE, Email
-- @Jocelyn  (link to account), Project Lead, 0.5, jocelyn@gmail.com
-
-Goals:
-
-Requirements:
-Eg. Supercomputing or telescope time
-
-Risk and mitigation measures:
-
-Github repos:
-
-Data storage (Eg. google drive folder):
-
-~~~
-{: .language-MD}
-
-This project plan is for your internal reference and it should assist your communication and data management.
-
-### Title and description
-These can be kept breif and should be used to quickly introduce a new collaborator to what we plan to do and include any relevant plots
-
-### Estimated completion date
-In research, there are rarely hard deadlines for project completion but it is still useful to estimate how long a task will complete so researchers can budget their time.
-
-### Collaborators
-Stating all the collaborators and their roles will make it clear from the beginning who holds which responsibilites. The Full Time Equivlent (FTE) has two purposes, it will give the project lead and idea of how much work they can assign and for the collaborators own reference so they can track how much time they have already commited before accepting new projects.
-
-### Goals
-These goals can be simple and breif (eg. publish a paper and process some data) they are most useful to keep the project on track. When deciding on next steps you should consider the goals of the project to assure that you are not doing work that is outside of the scope of the project.
-
-### Requirements
-There are likely some supercomputing or telescope requirements for your project. It is important to state these early on so you can plan proposals and estimate when you well get and have processed data.
-
-### Risks and mitigation measures
-If your proposals are not accepted, are there other telescopes or supercomputers that you can use? Will you back up your data incase the supercomputer crashes and you lose it? A quick consideration of the risks and what you can do to mitigate them can save you a lot of pain down the road
-
-### Github repos
-If you're developing software as part of this project you should include the github repository link. If there is software you depend on or are adapting it is useful to include those links here.
-
-### Data storage
-The best method of data storage is very project dependent. How to access the data should be described here which could be a link to cloud storage or the directory on a supercomputer.
+## Project Plan
+Your first metting for the project should involve planning. Filling out the [description template](../03-trello/#project-plan) will likely cover all the important points such as each collaborators roles and FTE commitment, the goals and where software and data will be stored.
 
 ## Recommended Trello template
 The standard to do, in progress and done lists are usually sufficient but feel free to add more. The following labels will likely be helpful.
@@ -91,6 +42,9 @@ It is important to make all results reproducible in research. Not only is this g
 
 ### Small data (<1 GB)
 If your data is less than a GB then you can store this data on a github repository. This is the easiest solution as you can build the data into your github scripts so you can simply download the data and reproduce your results
+
+### Medium data (<~10 GB)
+If you data is has several large (100 MB to 2 GB) files you can use [git lfs](https://git-lfs.github.com/) to store large files on github without it storing the differences between the files.
 
 ### Large data (<1 TB)
 This data is too large to store on most online resources so you need to decide a long term place to store it. Some options are

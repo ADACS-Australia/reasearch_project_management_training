@@ -48,8 +48,12 @@ You can see that the "Finish research presentation" is due tomorrow so you shoul
 {: .callout}
 
 ## Time management
-To ensure that you are not spread too thin and you can finish tasks on time, it is essential to decide what fraction of your time, also known as Full-Time Equivalent (FTE), you want to allocate to each project you are working on. It may also help you to use a time tracking app. If you are spending more than 10 minutes tracking your time, it is unlikely to be worth the effort, so we will describe some simple time tracking methods. This basic information will allow you to see how much time tasks and projects take and improve your future estimates.
+ It is essential to decide what fraction of your time, also known as Full-Time Equivalent (FTE), you want to allocate to each project you are working on to ensure that you are not spread too thin and you can finish tasks on time. For example, you have been asked to help with another project, but you have two projects you spend 0.4 FTE on and a third you spend 0.2 FTE on. Since you have no remaining FTE, you let them know that you can not assist on their project, but you know that your third project will be complete in a month, so you promise them 0.2 FTE starting in a month. This will prevent you from taking on more work once you no longer have any FTE available.
 
+Deciding where you spend your FTE is only half the battle. You must also make sure you're only spending the FTE you have budgeted. Tracking your time can be done through several apps ([see the following section](#time-tracking-apps)) and should give you at least a rough estimate of the time you spend on each project. This basic information will allow you to see how much time tasks and projects take and improve your future estimates. For example, you estimated that it would take you a month to write the first chapter of your thesis, but it took six weeks. You now know to budget more time for the next chapter. Another example is that you budget 0.5 FTE for teaching, but you realise you are using 0.6 FTE, so you will have to cut back on other projects.
+
+## Time tracking apps
+It may also help you to use a time tracking app. If you are spending more than 10 minutes tracking your time, it is unlikely to be worth the effort, so we will describe some simple time tracking methods.
 ### Excel method
 [Here](https://docs.google.com/spreadsheets/d/1SGGcZE7vZULR72iWkuvSsmgca2sCJEu9CWxWDEVF2L0/edit?usp=sharing) is a link to a simple Google Sheets template of an easy way to track how much time you spend per week on several projects. Simply update it at the end of the week with what fraction of your time you spent on each project.
 

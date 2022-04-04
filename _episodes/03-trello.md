@@ -27,14 +27,64 @@ You can then click "Create your first board" and name it something related to yo
 
 ![trello_first_board](../fig/trello_first_board.png)
 
-You can add a description by pressing "Show Menu" (top right) and clicking on the description. You should get in the habit of adding a detailed description that includes the following details:
-- Project Title
-- Project Collaborators - Project team members (names, affiliations, contact details)
-- Project Description
-- Project Objectives
-- Documentation. Links to where things live for documents, e.g. google drive, sharepoint, etc, who has access
-- Data. Links to where things live for data, e.g. R drive, CloudStor, etc, who has access
-- Code. Links to where things live for code, e.g. GitHub. Note all CIC code projects should be version controlled with a repository on the CIC github organisation (or other where applicable, such as the Curtin HealthHub).
+## Project Plan
+Once you have made the project Trello board, the first thing you should do is fill in the description (or a card) with your project plan. You can add a description by pressing "Show Menu" (top right) and clicking on the description. The following is our recommended description template which is excellent for collaborative projects but you may also find helpful for personal projects.
+
+~~~
+Title
+
+Description:
+
+Estimated completion date:
+
+Collaborators:
+# Name, Role, Affiliation, FTE, Email
+- @Jocelyn (link to account), Project Lead, CIC, 0.5, jocelyn@gmail.com
+
+Goals:
+
+Requirements:
+E.g. Supercomputing or telescope time
+
+Risk and mitigation measures:
+
+Software:
+
+Documentation:
+
+Data storage (Eg. google drive folder):
+
+~~~
+{: .language-MD}
+
+This project plan is for your internal reference, and it should assist your communication and data management.
+
+### Title and description
+These can be kept brief and should be used to quickly introduce a new collaborator to what we plan to do and include any relevant plots.
+
+### Estimated completion date
+In research, there are rarely hard deadlines for project completion, but it is still helpful to estimate how long a task will be complete so researchers can budget their time.
+
+### Collaborators
+Stating all the collaborators and their roles will clarify who holds which responsibilities from the beginning. The Full-Time Equivalent (FTE) has two purposes; it will give the project lead an idea of how much work they can assign and for the collaborators' reference to track how much time they have already committed before accepting new projects.
+
+### Goals
+These goals can be brief and straightforward (e.g. publish a paper and process some data) and used to keep the project on track. When deciding on the next steps, you should consider the project's goals to ensure that you are not doing work that is outside the scope of the project.
+
+### Requirements
+There are likely some supercomputing or telescope requirements for your project. It is important to state these early on to plan proposals and estimate when you will get processed data.
+
+### Risks and mitigation measures
+If your proposals are not accepted, are there other telescopes or supercomputers that you can use? Will you back up your data in case the supercomputer crashes and you lose it? A quick consideration of the risks and what you can do to mitigate them can save you a lot of pain down the road
+
+### Software
+If you're developing software as part of this project, you should include the GitHub repository link. If there is software that you depend on or are adapting, it is useful to include those links here. Where possible, you should version control your software within your groups' GitHub organisation
+
+### Documentation
+Here, you can link the documentation you're developing or any other helpful documentation.
+
+### Data storage
+The best method of data storage is very project dependent. How to access the data should be described here, which could be a link to cloud storage or the directory on a supercomputer. E.g. Google drive, R drive or CloudStor and who has access
 
 ## Creating cards
 YOu can think of each Trello card as a single task (even if that task has several steps). Click "Add a card" and give in a simple title. You can then click on the card and give it a description.
