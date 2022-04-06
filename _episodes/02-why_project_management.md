@@ -14,31 +14,54 @@ keypoints:
 
 # Project Management
 ## Has this happened to you before?
-You attend a meeting to discuss a result that a colleague has been working on. They have emailed the figure to the group so they ask if everyone is looking at it. One person can't find the email so they share the screen so everyone can see the email attachment. They then realise that this is not the most up to date version of the figure so they spend a minute finding the latest figure on their laptop. After some useful discussion about the figure the meeting moves onto other tasks that the group is collaborating on. This involves updating the group on the progress of the tasks but none of them require discussion so it feels inefficient.
+You attend a meeting to discuss a result that a colleague has been working on. They have emailed the figure to the group so they ask if everyone is looking at it. One person can't find the email so they share the screen so everyone can see the email attachment. They then realise that this is not the most up to date version of the figure so they spend a minute finding the latest figure on their laptop.
 
-## Common problems
+You attend a meeting to discuss a project your group is collaborating on. This involves updating the group on the progress of the tasks which takes most of the meeting. Only one of the tasks requires discuss so it feels like an inefficient meeting.
+
+You want to start on a new task but you're not sure what tasks still need doing or if anyone is already working on them.
+
+## Common problems and how to solve them through project and data management
 The following are some problems you may have experienced in your research that make your work inefficient
 1. Struggling to find the email with the attached plot you are looking for
+
+    Have a central place where all plots are kept
+
 2. Not being sure if this is the most up to date version of a plot
+
+    Every time an update to a plot is made, you can upload the latest version and comment on the differences
+
 3. Struggling to keep track of your task
+
+    Track all of your tasks on a Kanban board
+
 4. Forgetting deadlines
+
+    Add deadlines to all your tasks so you can see approaching deadlines at a glance
+
 5. Not budgeting your time (spreading yourself too thin) so you can't work on your project
+
+    For each project you work on, budget a fraction of the time you plan to spend on it, and once you run out, do not take on new projects
+
 6. Struggling to keep track of who was assigned to a task
+
+    Through apps like Trello, you can clearly see who is assigned to a task and its progress
+
 7. Unsure who is assigned to the task that is blocking you
-8. Having meetings that involve updates on tasks rather than helpful discussions
 
-## Solutions through project and data management
-The following are how you can solve this problem through project and data management
-1. Have a central place where all plots are kept
-2. Every time an update to a plot is made, you can upload the latest version and comment on the differences
-3. Track all of your tasks on a Kanban board
-4. Add deadlines to all your tasks so you can see approaching deadlines at a glance
-5. For each project you work on, budget a fraction of the time you plan to spend on it, and once you run out, do not take on new projects
-6. Through apps like Trello, you can clearly see who is assigned to a task and its progress
-7. You can see on Trello who is blocking your task and send them a comment to hurry them
-8. Since you can see the progress of your tasks on the Kanban board, you do not need to talk about the progress of tasks. Your meetings can be focused on the discussion
+    You can see on Trello who is blocking your task and send them a comment to hurry them
+
+8. Having meetings that involve updates on tasks rather than helpful discussionsS
+
+    Since you can see the progress of your tasks on the Kanban board, you do not need to talk about the progress of tasks. Your meetings can be focused on the discussion
 
 
+## Your life on project management
+<!-- Probably not the best name but I was blanking -->
+You attend a meeting to discuss a result that a colleague has been working on. Everyone has access to where you stored the plot and can see every version of it and your comments on the changes. You can discuss the most recent change and even discuss reverting to a previous version if you made the plot more difficult to understand.
+
+You attend a meeting to discuss a project your group is collaborating on. Since the status of all tasks are displayed on your project management app there is no need to spend the meeting updating the group on the progress of the tasks. The meeting only involves discussion of difficult problems.
+
+You want to start on a new task so you select a task on the project management app, assign yourself and mark it as in progress so the group knows you have started the task.
 
 ## How can we more efficiently track our tasks?
 There are several project management strategies, such as waterfall and agile, all of which have pros and cons. A common tool that many project management strategies use is Kanban boards.
