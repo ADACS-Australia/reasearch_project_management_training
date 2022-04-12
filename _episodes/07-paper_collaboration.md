@@ -16,7 +16,7 @@ keypoints:
 It will be benifical to project manage any large peice of work, whether it is software, processing or analyising data. All of which may turn into a paper which you can also manage on the same Trello board.
 
 ## Project Plan
-Your first metting for the project should involve planning. Filling out the [description template](../03-trello/#project-plan) will likely cover all the important points such as each collaborators roles and FTE commitment, the goals and where software and data will be stored.
+Your first metting for the project should involve planning. Filling out the [project plan template](../03-trello/#project-plan) will likely cover all the important points such as each collaborators roles and FTE commitment, the goals and where software and data will be stored.
 
 ## Recommended Trello template
 The standard to do, in progress and done lists are usually sufficient but feel free to add more. The following labels will likely be helpful.
