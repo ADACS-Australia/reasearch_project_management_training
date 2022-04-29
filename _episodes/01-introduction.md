@@ -4,8 +4,6 @@ teaching: 2
 exercises: 0
 questions:
 - "How is the lesson structured?"
-keypoints:
-- "Lesson layout"
 ---
 # Acknowledgement of country
 We wish to acknowledge the custodians of the land we reside on, for the developers of these lessons, these are the Wadjuk (Perth region) people of the Nyoongar nation.

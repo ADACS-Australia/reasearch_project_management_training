@@ -9,9 +9,9 @@ questions:
 objectives:
 - "Become familiar with how to use Trello"
 keypoints:
-- "Making Trello workspaces"
-- "Making Trello cards"
-- "Making Trello card templates"
+- "Trello has a hierarchy of workspace/board/list/card"
+- "Lists and cards can be used to make a Kanban board"
+- "Templates for cards can save you time"
 ---
 
 # Trello

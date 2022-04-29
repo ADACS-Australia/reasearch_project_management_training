@@ -3,12 +3,17 @@ title: "Personal Project Management"
 teaching: 0
 exercises: 0
 questions:
+- "How can I prioritize my tasks?"
 - "How can manage my tasks?"
-- "How can I prioritise my tasks?"
+- "What software is available to help?"
 objectives:
-- ""
+- "Understand how to prioritize your work"
+- "Know how to incorporate priority/importance/impact into your Trello boards"
+- "Understand the benefits of time planning and tracking"
 keypoints:
-- ""
+- "Project management doesn't have to be a group effort"
+- "Planning, tracking, and reviewing are important practices for effective time management"
+- "Explore and choose the apps and tools that are most useful for you"
 ---
 
 # Personal Project Management

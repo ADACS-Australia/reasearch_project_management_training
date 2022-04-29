@@ -3,13 +3,16 @@ title: "The Benefits of Project Management"
 teaching: 0
 exercises: 0
 questions:
-- "How is this better then emails?"
 - "What is project management?"
-- "What is a kanban board?"
+- "What is a Kanban board?"
+- "How is this better then emails?"
 objectives:
-- ""
+- "Understand key concepts of project management"
+- "Be familiar with the idea of a Kanban board"
 keypoints:
-- ""
+- "Failure to plan is planning to fail - project management is planning for success"
+- "Research work fits best with an agile approach to project management"
+- "Reflection and adaptation are key to success"
 ---
 
 # Project Management
