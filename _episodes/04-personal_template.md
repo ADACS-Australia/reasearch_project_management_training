@@ -46,16 +46,20 @@ In this scheme, you should work from right to left as you decide which task to w
 It is important with this method to regularly review the cards and move them as they become urgent.
 
 ### Kanban style
-If you wish to keep your Kanban board style but incorporate task priority you can do this by setting the urgent/important status of a task using a due date, and possibly a label for "important/not-important".
+If you wish to keep your Kanban board style but incorporate task priority, you can do this by using a due date to show the urgency of a task and show the importance of a task by either using labels or separate lists.
 This will allow you to see what tasks are urgent with the help of Trello.
-Trello displays a yellow clock for due the next day and a red clock for overdue.
 
-<!-- Nick, can you remake the image to include labels, and to have in progress/done categories? -->
+Below is an example of using two lists to separate your tasks by priority. The backlog list can include your not important tasks (or stretch goals) that will likely only be completed when you have no more Todo items.
 
 ![two_list](../fig/two_list.png)
 
-You can see that the "Finish research presentation" is due tomorrow so you should complete that first.
-You can also use Filter (top right) and only display items that are due within a certain time range, or to identify important/not-important tasks.
+You can also use labels to separate tasks by priority if you prefer. In the example below, we used a pink label for important tasks and black for unimportant ones. Remember that you can use the Filter button to only show important tasks if you'd like.
+
+![two_label](../fig/two_label.png)
+
+
+You can see that the "Finish research presentation" is due tomorrow, so you should complete that first. It should be noted that Trello only displays a yellow clock for due the next day and a red clock for overdue.
+You can also use Filter (top right) and only display items that are due within a certain time range.
 
 
 > ## Bonus note
