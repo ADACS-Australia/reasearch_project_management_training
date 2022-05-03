@@ -1,7 +1,7 @@
 ---
 title: "Group Project Management"
-teaching: 0
-exercises: 0
+teaching: 10
+exercises: 5
 questions:
 - ""
 objectives:

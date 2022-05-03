@@ -1,6 +1,6 @@
 ---
 title: "The Benefits of Project Management"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - "What is project management?"

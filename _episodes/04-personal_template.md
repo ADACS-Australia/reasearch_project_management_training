@@ -1,7 +1,7 @@
 ---
 title: "Personal Project Management"
-teaching: 0
-exercises: 0
+teaching: 15
+exercises: 10
 questions:
 - "How can I prioritize my tasks?"
 - "How can manage my tasks?"
