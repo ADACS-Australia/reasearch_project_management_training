@@ -1,21 +1,254 @@
 ---
-title: "Software collabartion with GitHub"
+title: "Software collaboration with GitHub"
 teaching: 0
 exercises: 0
 questions:
-- "How can I collaborate with GitHub"
+- "How can I collaborate with GitHub?"
+- "Can I use GitHub for project management?"
 objectives:
-- ""
+- "Understand GitHub issues and pull requests"
+- "Be aware of GitHub projects"
+- "Understand how GitHub and Trello can be used together"
 keypoints:
 - ""
 ---
 
 # GitHub
 <!-- TODO Paul and I can fill out this section after we assess the skill of the students -->
+## Recap
+For this lesson we assume that you already know how to track files on your own computer and that you are comfortable with the basic git workflow:
+
+![git workflow](../fig/git-workflow.png)
+
+image credit: [toolsqa](https://www.toolsqa.com/git/git-life-cycle/)
+
+## Working With Remote Repositories
+
+Version control really comes into its own when we begin to collaborate with other people.
+Git makes collaboration easy as each party has their own complete copy of a repository and can make the required changes independently from a connection to a central repository. 
+
+In practice, however, the simplest way to work collaboratively is to use a central copy of the repository (considered to be the "truth") to which everyone adds their changes. Most programmers use hosting services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or [GitLab](https://gitlab.com/) to hold this central copy which is called a remote repository.
+
+To interact with a remote repository the above workflow gets extended by a `push` and `pull` step to send and retrieve changes from the remote repo, respectively:
+
+![git workflow](../fig/git-pull.png)
+image credit: [toolsqa](https://www.toolsqa.com/git/git-life-cycle/)
+
+## Working collaboratively 
+
+As mentioned above, working remotely and collaboratively is supported by various hosting services.
+Everyone has their own complete copy of the entire repository and can make changes as required.
+From there changes are committed (`push`ed) to a central repository and all collaborators can implement these changes in their own local repositories by running the `pull` command.
+
+![example of using a centralised repo](https://nvie.com/img/centr-decentr@2x.png)
+
+To be able to integrate one's changes in the remote repository the author will need to have write access, if they do not have these they can submit a _pull request_ or _merge request_ and a repository owner/maintainer can then approve and merge these changes.
+
+> ## A Basic Collaborative Workflow
+>
+> In practice, it is good to be sure that you have an updated version of the
+> repository you are collaborating on, so you should `git pull` before making
+> changes. The basic collaborative workflow would be:
+>
+> * update your local repo with `git pull origin main`,
+> * make your changes and stage them with `git add`,
+> * commit your changes with `git commit -m`, and
+> * upload the changes to the remote repo with `git push origin main`
+>
+> It is better to make many commits with smaller changes rather than
+> of one commit with massive changes: small commits are easier to
+> read and review.
+{: .callout}
+
+## Conflicts
+
+As soon as people can work in parallel, they'll likely step on each other's
+toes.
+This will even happen with a single person: if we are working on
+a piece of software on both our laptop and a server in the lab, we could make
+different changes to each copy.
+Version control helps us manage these
+*conflicts* by giving us tools to *resolve* overlapping changes.
+
+![The Conflicting Changes](https://swcarpentry.github.io/git-novice/fig/conflict.svg)
+
+Sometimes the conflicts are easy to resolve and sometimes they can be down right infuriating.
+As noted above, a good rule of thumb is to make many commits, and for each commit to contain a small number of changes.
+
+> ## Reducing conflicts
+> If you find yourself resolving a lot of conflicts in a project,
+> consider these technical approaches to reducing them:
+> 
+> - Pull from upstream more frequently, especially before starting new work
+> - Use topic `branch`es to segregate work, merging to main when complete
+> - Make smaller more atomic commits
+> - Where logically appropriate, break large files into smaller ones so that it is   less likely that two authors will alter the same file simultaneously
+> 
+> Conflicts can also be minimized with project management strategies:
+> 
+> - Clarify who is responsible for what areas with your collaborators
+> - Discuss what order tasks should be carried out in with your collaborators so
+>   that tasks expected to change the same lines won't be worked on simultaneously
+> - If the conflicts are stylistic churn (e.g. tabs vs. spaces), establish a
+>   project convention that is governing and use code style tools (e.g.
+>   [`pylint`](https://pylint.pycqa.org/en/latest/) or [`black`](https://black.readthedocs.io/en/stable/)) to enforce, if necessary
+>
+> Git looks at text based changes on a line by line basis.
+> Therefore:
+> - In a text document break your paragraphs into one sentence per line.
+>   - Latex/Markdown ignore the linebreaks anyway, and it also improves human readability.
+> - In a code document (script) avoid long lines where possible
+>   - Many languages allow line continuation
+> - When making changes, stay focused on the purpose of the change.
+>   - Don't mix grammar and spelling changes with your ordering/layout changes
+>   - If you use a code formatter to style your code, run it first, commit, then make the changes, run it again and commit again.
+>   - Don't fix multiple bugs at once, or implement multiple features at once.
+> All of the above will help you when you eventually need to roll back some of the changes that you made, or merge your changes with someone elses.
+{: .callout}
+
+## Branching
+
+Git can store multiple concurrent sets of the changes made to the files and directories in a git repo. Each of these parallel instances is called a branch and `main` is Git's default working branch.
+
+A new branch can be created from any commit and will have a divergent history starting from this commit. Branches can also be **merged** together.
+
+
+### Why are branches useful?
+
+Developing software we want to try out some new ideas, but we're not sure yet whether they'll work or if we'll keep them. 
+While this development work is going on we want to make sure that our working version of the software is unaffected.
+To do this we can create a branch, e.g. 'feature1', and keep our `main` branch clean.
+When we're done developing the feature and we are sure that we want to include it
+in our program, we can merge the feature branch with the `main` branch. 
+This keeps all the work-in-progress separate from the `main` branch, which 
+contains tested, working code.
+
+When we merge our feature branch with `main`, git creates a new commit which
+contains merged files from `main` and `feature1`. 
+After the merge we can continue developing (and making commits) in `feature1` as well.
+**The merged branch is not deleted.** 
+
+### Branching workflows
+
+One popular model is the [Gitflow model](http://nvie.com/posts/a-successful-git-branching-model/):
+
+![Git Flow example](https://docs.gitlab.com/ee/topics/img/gitlab_flow_gitdashflow.png)
+
+- A `main` branch, representing a released version of the code
+- A release branch, representing the beginnings of the next release - a branch 
+where the code is still undergoing testing
+- Various feature and/or developer-specific branches representing
+work-in-progress, new features, bug fixes etc
+
+There are different possible workflows when using Git for code development. 
+If you want to learn more about different workflows with Git, have a look at
+[this discussion](https://www.atlassian.com/git/tutorials/comparing-workflows)
+on the Atlassian website.
+
+### Branch Summary
+- A branch is a divergent history from the `main` branch starting at a specific commit
+  - You can think of them as pointers to a specific commit
+- You should develop new code on a branch so that your `main` always remains in working order
+  - branch early, and branch often
+  - there is no storage / memory overhead with making many branches, it's easier to logically divide up your work than have big beefy branches which are more likely to cause merge conflicts.
+- Merging creates a new commit that integrates the changes and existing branches are not changed.
+- Rebasing moves your changes to the tip of the existing branch and will re-write history to give you a linear workflow. You should not do it in shared branches!
+
+# Collaborative software development concepts
+
+## Issue tracking
+The first point of call is the issue tracker.
+In my experience this is the most useful collaborative tool.
+You can access the issue tracker from from the left pane of your GitHab repo:
+<!-- TODO: Make some GitHub versions of these following figures-->
+![IssueTracker](../fig/03-Issues.png)
+The issues are labeled (number and description), and can have tags to categorize them.
+Issues can be linked to project milestones, and can have subtasks (todo lists) for completion.
+
+![Subtasks](../fig/03-Subtasks.png)
+If we click on a link we can see a panel on the right that allows us to use a lot of project/team management tools including:
+- assigning an issue to someone
+- linking to epics/milestones
+- setting a due date
+- time tracking
+- linking
+
+A super useful capability to note is that each issue has a unique number (6 in the image above), and that you can make links to that issue in the git commits or other issues, simply by referring to it via `#6`.
+The discussion thread of each issue will then be automatically populated with a link to that commit.
+Similarly, milestones can be referenced by using the `%"Milestone name"` syntax.
+
+
+## Merge/Pull requests
+It is good practice to set one of your branches as THE branch which will always work. 
+Typically this is the `main` branch.
+In GitHub you can prevent people from committing changes directly to this branch by making it a *protected* branch.
+People will be unable to push changes to a protected branch, the only way to make changes is via a merge request.
+
+To begin a merge request we click the blue button here:
+![BeginMerge](../fig/03-MergeRequest1.png)
+
+And then select the branch that has the changes we want to merge from (the source branch) and the branch we want to apply the changes onto (the target branch):
+![SourceTarget](../fig/03-MergeRequest2.png)
+
+A merge request is essentially a special kind of issue so it'll get a number just like an issue would.
+You can link to this merge request in the same way you would with an issue.
+Additionally a merge request can set an assignee for the merge request - this is the person who will sort out any conflicts or issues.
+You can also assign a reviewer - this is the person that will *identify* issues, and *approve* the merge request.
+![CreateMerge](../fig/03-MergeRequest3.png)
+
+Once the merge request has been created GitLab will show you which commits will be included, which files will be changed, and if there are any conflicts.
+If there are conflicts that cannot be automatically resolved, you will not be able to do the merge until the conflicts are resolve and the approver has signed off (if assigned).
+Behind the scenes a merge request is just doing `git merge` (or `git rebase` depending on what you choose).
+
+## Code review
+Code review is the process of consciously and systematically checking that new or updated code is up to spec according to a set of standards.
+Code review is an important phase of the development cycle for any code base, and whilst it will take time to complete, it will save you time and stress in the long term.
+
+Before new code is accepted into the code-base a review takes place to ensure that the code meets the project standards.
+Standards can include:
+- existing tests still pass
+- new code has accompanying tests (which pass)
+- test coverage for new/changed code is at least 80%
+- documentation has been updated to align with adjustments to code
+- code is formatted according to project guidelines (eg, [PEP8](https://www.python.org/dev/peps/pep-0008/))
+
+It is generally a good idea to document the standards and procedures for accepting a pull request for your code base.
+The `CONTRIBUTING.md` file in the root of your repo is a good place to outline these standards/procedures.
+
+Not only is code review good for your project, but it is good for your developers.
+By frequently discussing how and why code is being written, and analyzing each other's code, you will learn new software development skills.
+In general, academics are rather scared to share their "garbage code" with others, but, just like paper writing, it's only through peer review and self-reflection that you can improve your skills.
+
+
+### Who performs code review?
+GitHub and GitLab both provide an interface for performing code review at the pull/merge request stage.
+Additionally, CI features (above) can be set up such that they will compile documentation, run tests, and report coverage, for each merge/pull request and then comment with their results.
+
+Even with the above automated features there is usually a final requirement that someone is responsible for signing off on a set of changes.
+Code review should not just be performed by one person, even if they are the senior developer.
+Code review is in everyone's interest and the opportunity/responsibility should be shared.
+
+### Forms of code review
+*Discussion based* - where the code is shared among the team and input is sought.
+Strengths and weaknesses are highlighted along with potential alternatives.
+This work well for a small group of dedicated people.
+
+*Pair programming* - where the review is happening during the development phase.
+You and a buddy work on the same problem or same piece of code and continually share your solutions.
+This is an excellent way to up-skill new members and introduce them to the procedures and standards of your project.
+
+*Informal* - where new/changed code is discussed with a colleague over a hot-beverage at your desk.
+This may break out into pair programming, or be elevated to a larger group discussion, and is thus a great place to start your code-review.
+
+*Tool assisted* - where much of the review process is done by the computer.
+Checking that tests pass and coverage quotas are met is a simple task for a computer.
+Ensuring that code obeys a style guide such as PEP8 can be done by your IDE as you work.
+Templates for doc-strings and new files to align with project style can also be provided to your IDE.
 
 
 # Software Collaboration
-The size and scope of the software will determine which project management tools will best suit your needs. The following sections will give recomendations for different project sizes.
+The size and scope of the software will determine which project management tools will best suit your needs. The following sections will give recommendations for different project sizes.
+
 
 ## Small piece of software with one collaborator
 For a small number of collaborators, using GitHub Issues is likely sufficient.
