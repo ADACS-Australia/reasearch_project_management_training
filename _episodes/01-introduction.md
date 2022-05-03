@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 2
+teaching: 5
 exercises: 0
 questions:
 - "How is the lesson structured?"

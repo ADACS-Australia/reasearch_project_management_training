@@ -1,7 +1,7 @@
 ---
 title: "Personal Project Management"
-teaching: 0
-exercises: 0
+teaching: 15
+exercises: 10
 questions:
 - "How can I prioritize my tasks?"
 - "How can manage my tasks?"
@@ -46,16 +46,20 @@ In this scheme, you should work from right to left as you decide which task to w
 It is important with this method to regularly review the cards and move them as they become urgent.
 
 ### Kanban style
-If you wish to keep your Kanban board style but incorporate task priority you can do this by setting the urgent/important status of a task using a due date, and possibly a label for "important/not-important".
+If you wish to keep your Kanban board style but incorporate task priority, you can do this by using a due date to show the urgency of a task and show the importance of a task by either using labels or separate lists.
 This will allow you to see what tasks are urgent with the help of Trello.
-Trello displays a yellow clock for due the next day and a red clock for overdue.
 
-<!-- Nick, can you remake the image to include labels, and to have in progress/done categories? -->
+Below is an example of using two lists to separate your tasks by priority. The backlog list can include your not important tasks (or stretch goals) that will likely only be completed when you have no more Todo items.
 
 ![two_list](../fig/two_list.png)
 
-You can see that the "Finish research presentation" is due tomorrow so you should complete that first.
-You can also use Filter (top right) and only display items that are due within a certain time range, or to identify important/not-important tasks.
+You can also use labels to separate tasks by priority if you prefer. In the example below, we used a pink label for important tasks and black for unimportant ones. Remember that you can use the Filter button to only show important tasks if you'd like.
+
+![two_label](../fig/two_label.png)
+
+
+You can see that the "Finish research presentation" is due tomorrow, so you should complete that first. It should be noted that Trello only displays a yellow clock for due the next day and a red clock for overdue.
+You can also use Filter (top right) and only display items that are due within a certain time range.
 
 
 > ## Bonus note
@@ -70,7 +74,7 @@ This is useful when considering which projects to take on and their goals.
 Successful researchers are often skilled at choosing projects that are high impact with minimal effort.
 
 ## Time management
-An essential part of organizing the work that you need to do involves estimating the amount fo time or effort that is required for each task.
+An essential part of organizing the work that you need to do involves estimating the amount of time or effort that is required for each task.
 This estimation can be difficult to get right, but you can make the process easier by using a data driven approach - tracking the time spent on activities and then using that to inform your future estimates.
 Time management and time tracking can therefore be central to properly managing your projects.
 
@@ -81,7 +85,7 @@ Effective time management will prevent you from taking on more work than you can
 
 For example, someone asks you to help with a project.
 You look at your project planning app and see that you have two projects you aim to spend 0.4 FTE on and a third you aim to spend 0.2 FTE on.
-Since this fills up the entire 1.0FTE, you let them know that you can not assist on their project.
+Since this fills up the entire 1.0 FTE, you let them know that you can not assist on their project.
 You know that your third project will be complete in a month, so you offer to provide help at the level of 0.2 FTE starting in a month.
 
 Deciding where you spend your FTE is only half the battle.
@@ -135,7 +139,7 @@ Project management can be useful for teams of 1 as well as teams of 10-100.
 The key to personal project management is setting priorities, estimating and managing time, and reevaluating your project on a regular basis so that you can adjust your plan or work allocation to keep your projects on track (and to keep yourself sane).
 By managing your own time and effort effectively you'll be able to better plan for and respond to unexpected events, and to manage your own and other people's expectations.
 
-Practising good project management for your own self can help you find the tools that work well for your and to build good habits.
+Practising good project management for your own self can help you find the tools that work well for you and to build good habits.
 From here you can then take these lessons learned and apply them to all your collaborative projects, so that everyone can see increased productivity, more research outputs, clearer communication, and better understood expectations.
 
 {% include links.md %}
