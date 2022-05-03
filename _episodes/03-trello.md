@@ -26,9 +26,8 @@ Trello organizes your tasks by workspaces and boards.
 Tasks that relate to a project are grouped into the same boards, and then multiple related boards are grouped into a workspace.
 For example you may have a different board for each of your research projects, but then group them together based on your collaborations.
 If you are doing a PhD then you'll probably just need a single board for your PhD, and a single workspace to hold that board.
-As an ECR you'll probably have a workspace that is something like "my astro work", which then has a different board for each of the projects that you are involved in.
+As an early career researcher you'll probably have a workspace that is something like "my astro work", which then has a different board for each of the projects that you are involved in.
 Many people find it useful to also have a "personal" or "home life" board that they use to track non-work related activities.
-These people would also use a spreadsheet to organize their wedding.
 
 Trello uses a Kanban board to track tasks for each of your boards, and this is the default visualization that you'll see when you create a board.
 The different columns within a board are referred to as "lists" and items within the list are "cards".

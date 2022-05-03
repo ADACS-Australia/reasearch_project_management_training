@@ -74,7 +74,7 @@ This is useful when considering which projects to take on and their goals.
 Successful researchers are often skilled at choosing projects that are high impact with minimal effort.
 
 ## Time management
-An essential part of organizing the work that you need to do involves estimating the amount fo time or effort that is required for each task.
+An essential part of organizing the work that you need to do involves estimating the amount of time or effort that is required for each task.
 This estimation can be difficult to get right, but you can make the process easier by using a data driven approach - tracking the time spent on activities and then using that to inform your future estimates.
 Time management and time tracking can therefore be central to properly managing your projects.
 
@@ -85,7 +85,7 @@ Effective time management will prevent you from taking on more work than you can
 
 For example, someone asks you to help with a project.
 You look at your project planning app and see that you have two projects you aim to spend 0.4 FTE on and a third you aim to spend 0.2 FTE on.
-Since this fills up the entire 1.0FTE, you let them know that you can not assist on their project.
+Since this fills up the entire 1.0 FTE, you let them know that you can not assist on their project.
 You know that your third project will be complete in a month, so you offer to provide help at the level of 0.2 FTE starting in a month.
 
 Deciding where you spend your FTE is only half the battle.
@@ -139,7 +139,7 @@ Project management can be useful for teams of 1 as well as teams of 10-100.
 The key to personal project management is setting priorities, estimating and managing time, and reevaluating your project on a regular basis so that you can adjust your plan or work allocation to keep your projects on track (and to keep yourself sane).
 By managing your own time and effort effectively you'll be able to better plan for and respond to unexpected events, and to manage your own and other people's expectations.
 
-Practising good project management for your own self can help you find the tools that work well for your and to build good habits.
+Practising good project management for your own self can help you find the tools that work well for you and to build good habits.
 From here you can then take these lessons learned and apply them to all your collaborative projects, so that everyone can see increased productivity, more research outputs, clearer communication, and better understood expectations.
 
 {% include links.md %}
