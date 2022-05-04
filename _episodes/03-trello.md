@@ -57,32 +57,32 @@ You can add a description by pressing "Show Menu" (top right) and clicking on th
 A project plan will help you set a clear goal and ensure you immediately consider things like documentation and data storage.
 Once the project is complete you can reflect on your project plan to find ways you can improve.
 
-The following is our recommended project plan template.
+The following is our recommended project plan template (in Markdown style as Trello uses [some Mardown styling](https://help.trello.com/article/821-using-markdown-in-trello)).
 Depending on the project, some items will be more important than others but it is still important to consider all items.
 
 ~~~
-Title
+#Title
 
-Description:
+##Description:
 
-Estimated completion date:
+##Estimated completion date:
 
-Collaborators:
-# Name, Role, Affiliation, FTE, Email
+##Collaborators:
+- Name, Role, Affiliation, FTE, Email
 - @Jocelyn (link to account), Project Lead, CIC, 0.5, jocelyn@gmail.com
 
-Goals:
+##Goals:
 
-Requirements:
+##Requirements:
 E.g. Supercomputing or telescope time
 
-Risk and mitigation measures:
+##Risk and mitigation measures:
 
-Software:
+##Software:
 
-Documentation:
+##Documentation:
 
-Data storage (Eg. google drive folder):
+##Data storage (Eg. google drive folder):
 
 ~~~
 {: .language-MD}
