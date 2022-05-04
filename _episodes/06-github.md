@@ -119,7 +119,7 @@ Developing software we want to try out some new ideas, but we're not sure yet wh
 While this development work is going on we want to make sure that our working version of the software is unaffected.
 To do this we can create a branch, e.g. 'feature1', and keep our `main` branch clean.
 
-![feature_branch](fig/fb2x.png)
+![feature_branch](../fig/fb2x.png)
 
 When we're done developing the feature and we are sure that we want to include it
 in our program, we can merge the feature branch with the `main` branch.
