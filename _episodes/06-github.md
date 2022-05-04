@@ -159,46 +159,63 @@ on the Atlassian website.
 ## Issue tracking
 The first point of call is the issue tracker.
 In my experience this is the most useful collaborative tool.
-You can access the issue tracker from from the left pane of your GitHab repo:
+You can access the issue tracker from the "Issues" tab of a GitHab repo:
 <!-- TODO: Make some GitHub versions of these following figures-->
-![IssueTracker](../fig/03-Issues.png)
+![IssueTracker](../fig/06-githubissuetracker.png)
 The issues are labeled (number and description), and can have tags to categorize them.
-Issues can be linked to project milestones, and can have subtasks (todo lists) for completion.
+Issues can be assigned to people, and have an inbuilt tracker / conversation associated with them.
 
-![Subtasks](../fig/03-Subtasks.png)
-If we click on a link we can see a panel on the right that allows us to use a lot of project/team management tools including:
-- assigning an issue to someone
-- linking to epics/milestones
-- setting a due date
-- time tracking
-- linking
+When creating a new issue you'll see the following:
 
-A super useful capability to note is that each issue has a unique number (6 in the image above), and that you can make links to that issue in the git commits or other issues, simply by referring to it via `#6`.
+![Newissue](../fig/06-githubnewissue.png)
+
+The following items can be set when creating an issue (and all can be updated later):
+- Each issue needs to have a short **name**, but can have a long (very long) description.
+- The more detailed the **description** of the problem/question/request is, the easier it can be for people to resolve.
+It is good practice to include screen shots or some other example of the behaviour.
+- You can **assign** people to work on the issue. They'll be notified when you save/update the issue.
+- A set of default **labels** are provided, but you can create your own. Multiple labels can be added to an issue so you can use them for multiple purposes.
+- If you have a GitHub [project](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects) setup you can link to it.
+- If you have defined any **milestones** you can link to that as well (not discussed here).
+
+Below is an example task that was created by a user, and has been worked on by two developers.
+
+![CompletedTask](../fig/06-githubcompleteissue.png)
+Note the use of tags, and that Github can link particular commits to an issue with in a repository.
+
+A super useful capability to note is that each issue has a unique number (6 in the image above), and that you can make links to that issue in the git commits or other issues, simply by referring to it via `#29`.
 The discussion thread of each issue will then be automatically populated with a link to that commit.
-Similarly, milestones can be referenced by using the `%"Milestone name"` syntax.
 
 
 ## Merge/Pull requests
 It is good practice to set one of your branches as THE branch which will always work. 
 Typically this is the `main` branch.
 In GitHub you can prevent people from committing changes directly to this branch by making it a *protected* branch.
-People will be unable to push changes to a protected branch, the only way to make changes is via a merge request.
+People will be unable to push changes to a protected branch, the only way to make changes is via a pull request.
 
-To begin a merge request we click the blue button here:
-![BeginMerge](../fig/03-MergeRequest1.png)
+A pull request is performed between different branches on a repository.
+If you have fixed a bug or developed a new feature in your feature branch and want those changes to be included in the main branch then you'll create a pull request to make this happen.
 
-And then select the branch that has the changes we want to merge from (the source branch) and the branch we want to apply the changes onto (the target branch):
-![SourceTarget](../fig/03-MergeRequest2.png)
+To begin a pull request we click the `pull requests` tab, and select "new pull request".
+You'll then need to select which branches you are going to be merging, and the direction.
+In the example below we are creating a pull request between different repositories (one being a copy of the other):
+![BeginMerge](../fig/06-githubprstart.png)
+Click the "Create pull request" button and you'll be taken to a familiar looking interface.
 
-A merge request is essentially a special kind of issue so it'll get a number just like an issue would.
-You can link to this merge request in the same way you would with an issue.
-Additionally a merge request can set an assignee for the merge request - this is the person who will sort out any conflicts or issues.
-You can also assign a reviewer - this is the person that will *identify* issues, and *approve* the merge request.
-![CreateMerge](../fig/03-MergeRequest3.png)
+![MergeInfo](../fig/06-githubprinfo.png)
 
-Once the merge request has been created GitLab will show you which commits will be included, which files will be changed, and if there are any conflicts.
+A pull request is treated as a special kind of issue so it'll get a number just like an issue would, and much of the information that is being requested is the same.
+You can link to this pull request in the same way you would with an issue.
+Additionally a pull request can set a reviewer - this is the person that will *identify* issues, and *approve* the merge request.
+See the next section for a short discussion on code review.
+
+
+Once the merge request has been created GitHub will show you which commits will be included, which files will be changed, and if there are any conflicts.
 If there are conflicts that cannot be automatically resolved, you will not be able to do the merge until the conflicts are resolve and the approver has signed off (if assigned).
-Behind the scenes a merge request is just doing `git merge` (or `git rebase` depending on what you choose).
+Behind the scenes a pull request is just doing `git merge` (or `git rebase` depending on what you choose).
+If there are conflicts you'll see a note that the branches cannot be merged.
+To fix this you should create and push new commits to the branch that is being pulled to resolve these conflicts.
+Once there are no conflicts, you'll get a green tick, and then the option to merge the branches.
 
 ## Code review
 Code review is the process of consciously and systematically checking that new or updated code is up to spec according to a set of standards.
@@ -247,15 +264,12 @@ Templates for doc-strings and new files to align with project style can also be 
 
 
 # Software Collaboration
-The size and scope of the software will determine which project management tools will best suit your needs. The following sections will give recommendations for different project sizes.
+The size and scope of the software will determine which project management tools will best suit your needs.
 
+For a small project you can probably manage all the development using only GitHub issues.
+However, as the project grows, or as you increase the number of people working on the project you'll find yourself looking for something like Trello to manage the higher level tasks.
 
-## Small piece of software with one collaborator
-For a small number of collaborators, using GitHub Issues is likely sufficient.
-<!-- TODO Put screenshots of how to make issues and how to add your own lables (priorities and bugs/enchancements) -->
-
-## Large piece of software with several collaborators
-As projects get bigger it becomes more important to keep track of issues with a Kanban board. Trello can be used and even has the option to attach branches, commits, issues and pull requests directly to cards using the GitHub Power-Up
+Trello has the option to attach branches, commits, issues and pull requests directly to cards using the GitHub Power-Up.
 <!-- TODO Put screenshots here -->
 
 You can keep all of your internal goals and development discussion in Trello and leave GitHub issues for user suggestions and bug reports.
