@@ -25,7 +25,7 @@ image credit: [toolsqa](https://www.toolsqa.com/git/git-life-cycle/)
 ## Working With Remote Repositories
 
 Version control really comes into its own when we begin to collaborate with other people.
-Git makes collaboration easy as each party has their own complete copy of a repository and can make the required changes independently from a connection to a central repository. 
+Git makes collaboration easy as each party has their own complete copy of a repository and can make the required changes independently from a connection to a central repository.
 
 In practice, however, the simplest way to work collaboratively is to use a central copy of the repository (considered to be the "truth") to which everyone adds their changes. Most programmers use hosting services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or [GitLab](https://gitlab.com/) to hold this central copy which is called a remote repository.
 
@@ -34,7 +34,7 @@ To interact with a remote repository the above workflow gets extended by a `push
 ![git workflow](../fig/git-pull.png)
 image credit: [toolsqa](https://www.toolsqa.com/git/git-life-cycle/)
 
-## Working collaboratively 
+## Working collaboratively
 
 As mentioned above, working remotely and collaboratively is supported by various hosting services.
 Everyone has their own complete copy of the entire repository and can make changes as required.
@@ -78,14 +78,14 @@ As noted above, a good rule of thumb is to make many commits, and for each commi
 > ## Reducing conflicts
 > If you find yourself resolving a lot of conflicts in a project,
 > consider these technical approaches to reducing them:
-> 
+>
 > - Pull from upstream more frequently, especially before starting new work
 > - Use topic `branch`es to segregate work, merging to main when complete
 > - Make smaller more atomic commits
 > - Where logically appropriate, break large files into smaller ones so that it is   less likely that two authors will alter the same file simultaneously
-> 
+>
 > Conflicts can also be minimized with project management strategies:
-> 
+>
 > - Clarify who is responsible for what areas with your collaborators
 > - Discuss what order tasks should be carried out in with your collaborators so
 >   that tasks expected to change the same lines won't be worked on simultaneously
@@ -115,18 +115,21 @@ A new branch can be created from any commit and will have a divergent history st
 
 ### Why are branches useful?
 
-Developing software we want to try out some new ideas, but we're not sure yet whether they'll work or if we'll keep them. 
+Developing software we want to try out some new ideas, but we're not sure yet whether they'll work or if we'll keep them.
 While this development work is going on we want to make sure that our working version of the software is unaffected.
 To do this we can create a branch, e.g. 'feature1', and keep our `main` branch clean.
+
+![feature_branch](fig/fb2x.png)
+
 When we're done developing the feature and we are sure that we want to include it
-in our program, we can merge the feature branch with the `main` branch. 
-This keeps all the work-in-progress separate from the `main` branch, which 
+in our program, we can merge the feature branch with the `main` branch.
+This keeps all the work-in-progress separate from the `main` branch, which
 contains tested, working code.
 
 When we merge our feature branch with `main`, git creates a new commit which
-contains merged files from `main` and `feature1`. 
+contains merged files from `main` and `feature1`.
 After the merge we can continue developing (and making commits) in `feature1` as well.
-**The merged branch is not deleted.** 
+**The merged branch is not deleted.**
 
 ### Branching workflows
 
@@ -135,12 +138,12 @@ One popular model is the [Gitflow model](http://nvie.com/posts/a-successful-git-
 ![Git Flow example](https://docs.gitlab.com/ee/topics/img/gitlab_flow_gitdashflow.png)
 
 - A `main` branch, representing a released version of the code
-- A release branch, representing the beginnings of the next release - a branch 
+- A release branch, representing the beginnings of the next release - a branch
 where the code is still undergoing testing
 - Various feature and/or developer-specific branches representing
 work-in-progress, new features, bug fixes etc
 
-There are different possible workflows when using Git for code development. 
+There are different possible workflows when using Git for code development.
 If you want to learn more about different workflows with Git, have a look at
 [this discussion](https://www.atlassian.com/git/tutorials/comparing-workflows)
 on the Atlassian website.
@@ -188,7 +191,7 @@ The discussion thread of each issue will then be automatically populated with a 
 
 
 ## Merge/Pull requests
-It is good practice to set one of your branches as THE branch which will always work. 
+It is good practice to set one of your branches as THE branch which will always work.
 Typically this is the `main` branch.
 In GitHub you can prevent people from committing changes directly to this branch by making it a *protected* branch.
 People will be unable to push changes to a protected branch, the only way to make changes is via a pull request.
