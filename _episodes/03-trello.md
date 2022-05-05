@@ -57,7 +57,7 @@ You can add a description by pressing "Show Menu" (top right) and clicking on th
 A project plan will help you set a clear goal and ensure you immediately consider things like documentation and data storage.
 Once the project is complete you can reflect on your project plan to find ways you can improve.
 
-The following is our recommended project plan template (in Markdown style as Trello uses [some Mardown styling](https://help.trello.com/article/821-using-markdown-in-trello)).
+The following is our recommended project plan template (in Markdown style as Trello uses [some Markdown styling](https://help.trello.com/article/821-using-markdown-in-trello)).
 Depending on the project, some items will be more important than others but it is still important to consider all items.
 
 ~~~
