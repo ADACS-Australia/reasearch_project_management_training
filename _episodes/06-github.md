@@ -22,6 +22,8 @@ For this lesson we assume that you already know how to track files on your own c
 
 image credit: [toolsqa](https://www.toolsqa.com/git/git-life-cycle/)
 
+If you are not familiar with the basics of git or want about git in more detail, you can find more in depth training [here](https://adacs.org.au/project/collaboration-on-shared-codebases/).
+
 ## Working With Remote Repositories
 
 Version control really comes into its own when we begin to collaborate with other people.
